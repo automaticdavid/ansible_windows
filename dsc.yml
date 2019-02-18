@@ -5,5 +5,5 @@
 
     - name: Get DSC module
       win_psmodule:
-        name: xDnsServer
+        name: cWindowsErrorReporting
         repository: PSGallery
