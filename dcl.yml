@@ -1,0 +1,9 @@
+- name: DSC example
+  hosts: all
+
+  tasks:
+
+    - name: Get DSC module
+      win_psmodule:
+        name: xDnsServer
+        repository: PSGallery
