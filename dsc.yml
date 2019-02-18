@@ -3,7 +3,12 @@
 
   tasks:
 
-    - name: Get DSC module
+    - name: Get DSC module for Error Reporting configuration
       win_psmodule:
         name: cWindowsErrorReporting
         repository: PSGallery
+
+    - name: Get DSC module for Certificates
+      win_psmodule:
+        name: cWindowsErrorReporting
+        url: https://github.com/PowerShell/CertificateDsc
