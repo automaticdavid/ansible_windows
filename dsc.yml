@@ -17,5 +17,6 @@
       win_dsc:
         resource_name: CertificateExport
         Type: 'CERT'
+        Store: 'Personal'
         FriendlyName: 'local-win'
         Path: 'c:\sslcert.cer'
