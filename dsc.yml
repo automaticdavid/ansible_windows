@@ -13,7 +13,7 @@
         name: CertificateDsc
         url: https://github.com/PowerShell/CertificateDsc
         
-    - name: Get DSC module for Certificates
+    - name: Export local certificate
       win_dsc:
         ressource_name: CertificateDsc
         Type: 'CERT'
