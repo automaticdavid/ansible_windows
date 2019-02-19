@@ -10,5 +10,12 @@
 
     - name: Get DSC module for Certificates
       win_psmodule:
-        name: cWindowsErrorReporting
+        name: CertificateDsc
         url: https://github.com/PowerShell/CertificateDsc
+        
+    - name: Get DSC module for Certificates
+      win_dsc:
+        ressource_name: CertificateDsc
+        Type: 'CERT'
+        Subject: 'WIN02'
+        Path: 'c:\sslcert.cer'
