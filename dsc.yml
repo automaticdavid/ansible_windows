@@ -15,7 +15,7 @@
         
     - name: Export local certificate
       win_dsc:
-        ressource_name: CertificateDsc
+        resource_name: CertificateDsc
         Type: 'CERT'
         Subject: 'WIN02'
         Path: 'c:\sslcert.cer'
