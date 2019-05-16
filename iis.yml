@@ -28,7 +28,7 @@
 
   - name: Testing IIS is properly configured and running on {{ inventory_hostname }}
     win_uri:
-        url: "http://{{ hostvars[inventory_hostname][public_ip] }}"
+        url: "http://{{ public_ip }}"
         return_content: yes
         register: result
         failed_when: "'Yay! Simple Ansible deployed IIS server ...' not in result.content"
